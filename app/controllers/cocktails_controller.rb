@@ -1,7 +1,6 @@
 class CocktailsController < ApplicationController
   def index
     user_search = params[:search][:query]
-    raise
     @cocktails = Cocktail.all
   end
 
