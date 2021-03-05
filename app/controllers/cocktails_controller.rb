@@ -1,6 +1,6 @@
 class CocktailsController < ApplicationController
   def index
-    user_search = params[:search][:query]
+    # user_search = params[:search][:query]
     @cocktails = Cocktail.all
   end
 
