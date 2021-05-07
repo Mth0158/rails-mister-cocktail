@@ -1,11 +1,6 @@
 class CocktailsController < ApplicationController
   def index
-    # user_search = params[:search][:query]
     @cocktails = Cocktail.all
-  end
-
-  def show
-    @cocktail = Cocktail.find(params[:id])
   end
 
   def new
@@ -18,17 +13,6 @@ class CocktailsController < ApplicationController
 
     redirect_to cocktail_path(@cocktail)
   end
-
-  #   def edit
-  #     @cocktail = Cocktail.find(params[:id])
-  #   end
-
-  #   def update
-  #     @cocktail = Cocktail.find(params[:id])
-  #     @cocktail.update(cocktail_params)
-
-  #     redirect_to cocktail_path(@cocktail)
-  #   end
 
   private
 

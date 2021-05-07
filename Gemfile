@@ -51,3 +51,5 @@ gem 'rails-controller-testing', group: [:test]
 gem 'rspec-rails', group: [:test]
 gem 'simple_form'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+gem "guard-livereload", "~> 2.5"
